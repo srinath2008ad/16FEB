@@ -32,7 +32,10 @@ function addscore(n) {
             alert("match over score = " + totalscore);
             arr.splice(0, arr.length);
             balls = 0;
+            over = 0,
+            overballs = 0;
             wicketcount = 0;
+            genoverscard();
             genuiscoreline();
             genuiscore();
         }
