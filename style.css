@@ -1,0 +1,16 @@
+#score h1{
+    display: inline;
+}
+#scorebuttons{
+    display: flex;
+}
+#scoreline h4{
+    display: inline;
+}
+body div{
+    margin: 10px;
+}
+
+#overcount, #overballs ,#overs{
+    display: inline;
+}

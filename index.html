@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="score">
+        <h1>Score:</h1>
+        <h1 id="points">0</h1>
+        <h1>/</h1>
+        <h1 id="wickets">0</h1>
+        <h3 id="overs">(<p id="overcount"></p>.<p id="overballs"></p>)</h3>
+    </div>
+    <div id="scoreline">
+        <h4>Score Line:</h4>
+        <h4 id="scores"></h4>
+    </div>
+    <div id="scorebuttons">
+        <button onclick="addscore('(.)')">DOT</button>
+        <button onclick="addscore(1)">1</button>
+        <button onclick="addscore(2)">2</button>
+        <button onclick="addscore(3)">3</button>
+        <button onclick="addscore(4)">4</button>
+        <button onclick="addscore(5)">5</button>
+        <button onclick="addscore(6)">6</button>
+        <button onclick="addscore('W')">W</button>
+        <button onclick="addscore('1wd')">Wide</button>
+        <button onclick="addscore('1nb')">noball</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
