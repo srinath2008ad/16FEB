@@ -1,16 +1,91 @@
-#score h1{
-    display: inline;
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #CFD8DC;
 }
-#scorebuttons{
+#score{
+    /* display: inline; */
+    background-color: #212121;
+    color:#FFFFFF;
+    height: auto;
+    min-width: 450px;
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 5px;
+    margin: 10px;
+    align-self: center;
+}
+#score h2, #score h3, #score p{
+    margin: 0;
+}
+#score-card{
     display: flex;
 }
+#strikers{
+    display: flex;
+    gap: 30px;
+}
+#strikers div{
+    display: flex;
+}
+#scorebuttons{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    width: 300px;
+}
+#scorebuttons button:nth-child(1){
+    grid-column: 1/3;
+}
+#scorebuttons button:nth-child(4){
+    grid-column: 1/2;
+}
+#scorebuttons button:nth-child(5){
+    grid-column: 2/4;
+}
+#scorebuttons button:nth-child(7){
+    grid-column: 1/3;
+}
+#scorebuttons button:nth-child(8){
+    grid-column: 3/5;
+}
+#scorebuttons button:nth-child(9){
+    grid-column: 1/2;
+}
+#scorebuttons button:nth-child(10){
+    grid-column: 2/5;
+} 
 #scoreline h4{
     display: inline;
 }
-body div{
-    margin: 10px;
+#scoreline{
+    min-width: 400px;
 }
-
 #overcount, #overballs ,#overs{
     display: inline;
+}
+#strike2{
+    display: none;
+}
+#scorebuttons button{
+    background-color: #212121;
+    color: #FFFFFF;
+    height: 30px;
+    /* width: 50px; */
+    border: 1px solid aliceblue;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#scoreline{
+    align-self: center;
+}
+#matchsummary{
+    align-self: center;
 }
