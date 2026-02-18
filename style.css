@@ -66,7 +66,7 @@ body{
     display: inline;
 }
 #scoreline{
-    min-width: 400px;
+    max-width: 400px;
 }
 #overcount, #overballs ,#overs{
     display: inline;
